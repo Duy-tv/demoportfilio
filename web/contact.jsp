@@ -6,6 +6,8 @@
 --%>
 
 <%@include file="includes/header.jsp" %>
+<link rel="stylesheet" href="styles/contact.css" type="text/css"/>
+
         <h1>CONTACT</h1>
     </body>
 </html>

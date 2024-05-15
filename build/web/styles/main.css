@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .navbar {
     display: flex;
     align-items: center;
     padding: 1em;
-    background-color: #333;
+    background-color: #292F33;
     color: white;
 }
 
@@ -49,3 +50,4 @@ body {
 .section {
     padding: 2em;
 }
+

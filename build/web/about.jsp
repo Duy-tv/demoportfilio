@@ -5,6 +5,7 @@
 --%>
 
 <%@include file="includes/header.jsp" %>
+<link rel="stylesheet" href="styles/about.css" type="text/css"/>
         <h1>ABOUT</h1>
     </body>
 </html>

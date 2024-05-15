@@ -1,0 +1,38 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : May 15, 2024, 9:39:24 PM
+    Author     : Duy.Tran
+*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to right, #66ffff 0%, #3366ff 100%);
+}
+.introduce {
+    margin: 30vh auto 30vh auto;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+}
+
+  @keyframes slideUp {
+    from {
+      opacity: 0; 
+      transform: translateY(20px); 
+    }
+    to {
+      opacity: 1; 
+      transform: translateY(0); 
+    }
+  }
+  
+  .introduce {
+      animation: slideUp 1.5s ease forwards; 
+  }
