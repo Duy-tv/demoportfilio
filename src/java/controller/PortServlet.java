@@ -7,6 +7,8 @@ package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -27,7 +29,6 @@ public class PortServlet extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
     /**
      * Handles the HTTP <code>GET</code> method.
@@ -40,7 +41,13 @@ public class PortServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-       String page = request.getParameter("page");
+        String page = request.getParameter("page");
+
+        GregorianCalendar currentDate = new GregorianCalendar();
+        int currentYear = currentDate.get(Calendar.YEAR);
+        int exper = currentYear - 2004;
+        request.setAttribute("exper", exper);
+
         switch (page) {
             case "work":
                 request.getRequestDispatcher("work.jsp").forward(request, response);
@@ -55,6 +62,7 @@ public class PortServlet extends HttpServlet {
                 request.getRequestDispatcher("index.jsp").forward(request, response);
                 break;
         }
+
     }
 
     /**
@@ -69,6 +77,7 @@ public class PortServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         doGet(request, response);
+
     }
 
     /**

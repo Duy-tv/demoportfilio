@@ -2,13 +2,13 @@
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
-*/
-/* 
+
+ 
     Created on : May 15, 2024, 9:39:24 PM
-    Author     : Duy.Tran
-*/
+    Author     : Duy.Tran*/
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Georgia", serif;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -22,17 +22,28 @@ body {
     font-size: 2vw;
 }
 
-  @keyframes slideUp {
+@keyframes slideUp {
     from {
-      opacity: 0; 
-      transform: translateY(20px); 
+        opacity: 0; 
+        transform: translateY(20px); 
     }
     to {
-      opacity: 1; 
-      transform: translateY(0); 
+        opacity: 1; 
+        transform: translateY(0); 
     }
-  }
-  
-  .introduce {
-      animation: slideUp 1.5s ease forwards; 
-  }
+}
+
+.introduce {
+    animation: slideUp 1.5s ease forwards; 
+}
+
+.introduce .name {
+    font-weight: bold;
+    color: aquamarine;
+}
+
+.introduce .name:hover {
+    border-radius: 5px;
+    color: #36486b;
+    text-decoration: underline;
+}

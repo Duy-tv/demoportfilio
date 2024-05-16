@@ -8,3 +8,45 @@ and open the template in the editor.
     Author     : Duy.Tran
 */
 
+body {
+    font-family: "Georgia", serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: linear-gradient(to right, #66ffff 0%, #3366ff 100%);
+}
+
+.container {
+    display: flex;
+    
+    margin: 20vh 20vh 30vh 10vh;
+}
+
+.work {
+    width: 50%;
+    margin: 0 30px;
+
+}
+
+.work h1 {
+    margin: 0;
+    animation: slideUp 1.5s ease forwards;
+}
+
+.work p {
+    margin-top: 20px;
+    margin-left: 30px;
+    animation: slideUp 2s ease forwards;
+}
+
+
+@keyframes slideUp {
+    from {
+        opacity: 0; 
+        transform: translateY(20px); 
+    }
+    to {
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
