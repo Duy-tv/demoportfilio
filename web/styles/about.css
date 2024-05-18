@@ -9,7 +9,7 @@ and open the template in the editor.
 */
 
 body {
-    font-family: "Georgia", serif;
+    font-family: "Poppins", Arial, sans-serif;
     margin: 0;
     padding: 0;
     width: 100%;
@@ -20,7 +20,7 @@ body {
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 20vh 30vh 30vh 20vh;
+    margin: 20vh 30vh 20vh 20vh;
 }
 
 .about {
@@ -30,24 +30,73 @@ body {
 }
 
 .about h1 {
+    font-size: 50px;
     margin: 0;
     animation: slideUp 1.5s ease forwards;
 }
 
-.about p {
+.about ul {
+    width: 50vw;
+}
+
+.about li {
+    font-size: 20px;
+    font-weight: bold;
+    list-style: none;
     margin-top: 20px;
+    animation: slideUp 2s ease forwards;
+}
+
+.about p {
+    color: navy;
+    font-family: sans-serif;
+    margin-top: 30px;
+    margin-left: 50px;
+    animation: slideUp 2s ease forwards;
+}
+
+ul li span {
+    display: inline-block;
+    width: 10vw; 
+    font-weight: bold; 
+}
+
+ul li span:last-child {
+    width: auto; 
+}
+ul li span:nth-child(2) {
+    color: azure; 
+}
+
+.download {
+    margin-top: 40px;
     margin-left: 30px;
     animation: slideUp 2s ease forwards;
 }
 
+.download-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 16px;
+    
+}
+
+.download-button:hover {
+    background-color: #0056b3;
+}
+
+
 .avatar {
     display: flex;
-    align-items: center; 
+    align-items: flex-start; 
 }
 
 .avatar img {
     width: 100%;
-    max-width: 18vw;
+    max-width: 20vw;
     border-radius: 50%;
     margin-left: 10px;
     animation: pulse 1.5s infinite;
